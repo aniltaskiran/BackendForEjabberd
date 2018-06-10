@@ -1,0 +1,32 @@
+<!DOCTYPE web-app PUBLIC
+ "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+ "http://java.sun.com/dtd/web-app_2_3.dtd" >
+
+
+<web-app>
+<display-name>Gamer Finder Backend</display-name>
+<servlet>
+  <servlet-name>CheckUserServlet</servlet-name>
+  <servlet-class>servlet.CheckUserServlet</servlet-class>
+</servlet>
+  <servlet>
+    <servlet-name>RegisterServlet</servlet-name>
+    <servlet-class>servlet.RegisterUserServlet</servlet-class>
+  </servlet>
+    <servlet>
+        <servlet-name>NewMatchServlet</servlet-name>
+        <servlet-class>servlet.NewMatchServlet</servlet-class>
+    </servlet>
+<servlet-mapping>
+  <servlet-name>CheckUserServlet</servlet-name>
+  <url-pattern>/checkUser</url-pattern>
+</servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>RegisterServlet</servlet-name>
+    <url-pattern>/register</url-pattern>
+  </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>NewMatchServlet</servlet-name>
+        <url-pattern>/newMatch</url-pattern>
+    </servlet-mapping>
+</web-app>
